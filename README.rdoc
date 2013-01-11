@@ -1,0 +1,22 @@
+== Health Checker
+Health Checker gem adds health_check_status action to controllers it's included on
+
+Install & Quick Start
+---------------------
+To install:
+
+    $ gem install health_checker
+
+add line to controller you wish to call action on...
+    $ include HealthChecker
+
+add route... 
+    $ match 'health_check_status' => 'application#health_check_status'
+
+Running Tests
+-------------
+  $ rake test
+
+Author
+------
+Charlie Quinn
